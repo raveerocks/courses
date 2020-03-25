@@ -12,7 +12,6 @@ public class Solution {
         // looping through increments
 
         while(i>=0 && A.get(i)>=last ){
-            // System.out.println("last"+last);
             last = A.get(i);
             --i;
         }
@@ -24,7 +23,6 @@ public class Solution {
 
 
         int replacement = A.get(i);
-        // System.out.println("broken :"+replacement);
 
         int j=n-1;
 
