@@ -1,6 +1,11 @@
 package io.github.raveerocks;
 
 public class Solution {
+    
+    /**
+     * @param A : Contains the integers
+     * @return  : Maximum value of f(i, j).
+     */
     public int maxArr(int[] A) {
 
         int AplusMin = Integer.MAX_VALUE, AplusMax = Integer.MIN_VALUE;
