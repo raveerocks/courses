@@ -17,18 +17,18 @@ public class Solution {
 
     /**
      *
-     * @param A : First Number
-     * @param B : Second Number
+     * @param a : First Number
+     * @param b : Second Number
      * @return  : GCD
      */
-    public int gcd(int A, int B) {
+    public int gcd(int a, int b) {
 
-        if(B==0){
-            return A;
+        if(b==0){
+            return a;
         }
         else
         {
-            return gcd(B,A%B);
+            return gcd(b,a%b);
         }
     }
 }
