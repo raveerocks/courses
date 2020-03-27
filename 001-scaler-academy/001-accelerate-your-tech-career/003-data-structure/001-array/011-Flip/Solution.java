@@ -36,7 +36,7 @@ public class Solution {
                 pairs[i].from = pairs[i - 1].from;
             }
 
-            // Finding the pair [L,R] which maximizes the count of one and is  lexicographically smaller
+            // Finding the pair [L,R] which maximizes the count of 1's and is lexicographically smaller
             if (minSum > pairs[i].sum) {
                 minSum = pairs[i].sum;
                 result[0] = pairs[i].from + 1;
