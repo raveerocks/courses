@@ -9,6 +9,7 @@ public class Solution {
         
         int count=0;
         
+        // Couting number of integers less than or equal to B
         for(int i =0; i<A.length;i++){
             if(A[i]<=B){
                 count++;
@@ -17,6 +18,7 @@ public class Solution {
         
         int exchanges=0;
         
+        // In the first bracket of size 'count' checking how many exchanges are required
         for(int i=0;i<count;i++){
             if(A[i]>B){
                 exchanges++;
@@ -25,7 +27,7 @@ public class Solution {
         
         int min = exchanges;
         
-        
+        // Among all brackets of size 'count' checking minimum exchanges required
         for(int i=count; i<A.length;i++){
             if(A[i-count]>B){
                 --exchanges;
