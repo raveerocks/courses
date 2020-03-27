@@ -1,5 +1,14 @@
+package io.github.raveerocks;
+
+import java.util.ArrayList;
+
 public class Solution {
-    
+
+    /**
+     *
+     * @param A : Array of integers
+     * @return  : Maximum GCD Excluding a Single element
+     */
     public int solve(ArrayList<Integer> A) {
         
         int n= A.size();
@@ -36,7 +45,15 @@ public class Solution {
         return maxGCD;
         
     }
-    
+
+
+
+    /**
+     *
+     * @param a : First Number
+     * @param b : Second Number
+     * @return  : GCD
+     */
     private int gcd(int a, int b){
         if(b==0){
             return a;
