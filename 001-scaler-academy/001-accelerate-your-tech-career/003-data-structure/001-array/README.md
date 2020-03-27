@@ -3,7 +3,7 @@
 The array is a datastructure that holds a collection of elements accessible by an index.The elements stored in an array can be anything from primitives types such as integers to more complex types like instances of classes.
 An element is stored in a given index and they can be retrieved at a later time by specifying the same index.
 
-# Problems Solved
+# Solved Problem Summary
 
 <table border="2" align="center">
   
