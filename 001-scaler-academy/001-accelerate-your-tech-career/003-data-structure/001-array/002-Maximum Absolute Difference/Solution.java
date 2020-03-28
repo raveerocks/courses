@@ -11,7 +11,6 @@ public class Solution {
         int AplusMin = Integer.MAX_VALUE, AplusMax = Integer.MIN_VALUE;
         int AminusMin = Integer.MAX_VALUE, AminusMax = Integer.MIN_VALUE;
 
-        int[] Aminus = new int[A.length];
         int max = 0;
 
         for (int i = 0; i < A.length; i++) {
