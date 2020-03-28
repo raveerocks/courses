@@ -7,29 +7,19 @@ public class Solution {
      * @return  : Maximum value of f(i, j).
      */
     public int maxArr(int[] A) {
-
-        int AplusMin = Integer.MAX_VALUE, AplusMax = Integer.MIN_VALUE;
-        int AminusMin = Integer.MAX_VALUE, AminusMax = Integer.MIN_VALUE;
-
-        int max = 0;
-
-        for (int i = 0; i < A.length; i++) {
-            if (i == 0) {
-                AplusMin = AplusMax = A[i] + i;
-                AminusMin = AminusMax = A[i] - i;
-
-            } else {
-
-                AplusMin = Math.min(AplusMin, A[i] + i);
-                AplusMax = Math.max(AplusMax, A[i] + i);
-                AminusMin = Math.min(AminusMin, A[i] - i);
-                AminusMax = Math.max(AminusMax, A[i] - i);
-
-            }
-
+        
+        int  plusMin,plusMax,minusMin,minusMax;
+        
+        plusMin=plusMax=minusMin=minusMax=A[0];
+        
+        for(int i = 1; i<A.length ; i++){
+              plusMin  = Math.min(plusMin, A[i]+i);
+              plusMax  = Math.max(plusMax, A[i]+i);
+              minusMin = Math.min(minusMin, A[i]-i);
+              minusMax = Math.max(minusMax, A[i]-i);
         }
-
-        return Math.max(AplusMax - AplusMin, AminusMax - AminusMin);
-
+        
+        return Math.max(plusMax-plusMin ,minusMax -minusMin );
+        
     }
 }
