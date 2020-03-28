@@ -1,4 +1,4 @@
-# Pubg
+# Delete Elements
 
 ## Problem Description
 
