@@ -23,14 +23,17 @@ public class Solution {
         
         
         
+        // Calculating GCD from  left end to each element
         for(int i=1;i<n;i++){
             prefixGCD [i] = gcd(prefixGCD[i-1],A.get(i));
         }
         
+        // Calculating GCD from  right end to each element
         for(int i=n-2;i>=0;i--){
             suffixGCD [i] = gcd(suffixGCD[i+1],A.get(i));
         }
         
+        // Calculating excludedGCD from prefixGCD and suffixGCD
         for(int i=1; i< n-1; i++){
             excludedGCD[i] = gcd(prefixGCD [i-1],suffixGCD[i+1]);
         }
