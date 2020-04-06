@@ -39,11 +39,11 @@ package io.github.raveerocks;
         }
 
          int maxGap = 0;
-         int last = buckets[0].max;
+         int previousMax = buckets[0].max;
          for(int i = 1; i<buckets.length; i++){
             if(buckets[i].min!=-1){
-                maxGap = Math.max(maxGap,buckets[i].min - last);
-                last = buckets[i].max;
+                maxGap = Math.max(maxGap,buckets[i].min - previousMax);
+                previousMax = buckets[i].max;
             }
         }
 
