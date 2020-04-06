@@ -11,11 +11,14 @@ public class Solution {
         
         int sum = 0, i=-1;
         
+        // 'sum' is the total number of oranges eaten so far
         while(i+1< A.length && sum<B){
             i++;
             sum+=A[i];
            
         }
+        
+        // 'sum' >= 'B' indicates that enough number of oranges were available to eat and 'i' is the index
         if(sum>=B){
             return i;
         }
