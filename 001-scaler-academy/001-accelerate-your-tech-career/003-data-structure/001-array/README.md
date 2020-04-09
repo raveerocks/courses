@@ -17,8 +17,8 @@ An element is stored in a given index and they can be retrieved at a later time 
 <tr>
   <td align="center">1</td>
   <td align="left">Rain Water Trapped</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(N)</td>
   <td align="center"></td>
 </tr>
 <tr>
