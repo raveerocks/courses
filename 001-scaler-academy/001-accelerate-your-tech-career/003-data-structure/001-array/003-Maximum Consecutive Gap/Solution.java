@@ -2,7 +2,7 @@ package io.github.raveerocks;
 
  public class Solution {
     // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
-    public int maximumGap(final int[] A) {
+     public int maximumGap(final int[] A) {
 
          if(A == null || A.length <2 ){
             return 0;
@@ -17,14 +17,17 @@ package io.github.raveerocks;
             min = Math.min(min,A[i]);
             max = Math.max(max,A[i]);
         }
+        
+        double range = (double)n/(max-min);
+        
+        int bucketSize = ((int)((max-min)*range))+1;
+        Bucket [] buckets = new Bucket[bucketSize];
 
-         Bucket [] buckets = new Bucket[n+1];
-
-        for(int i =0; i<buckets.length; i++){
+        for(int i =0; i<bucketSize; i++){
             buckets[i] = new Bucket();
         }
 
-        double range = (double)n/(max-min);
+       
          for(int i =0 ; i<n ; i++){
             int index = (int)((A[i] - min)*range);
 
@@ -44,6 +47,7 @@ package io.github.raveerocks;
             if(buckets[i].min!=-1){
                 maxGap = Math.max(maxGap,buckets[i].min - previousMax);
                 previousMax = buckets[i].max;
+
             }
         }
 
