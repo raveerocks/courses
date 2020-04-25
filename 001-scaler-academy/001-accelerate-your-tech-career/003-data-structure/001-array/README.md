@@ -31,113 +31,113 @@ An element is stored in a given index and they can be retrieved at a later time 
 <tr>
   <td align="center">3</td>
   <td align="left">Maximum Consecutive Gap</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(N)</td>
   <td align="center"></td>
  </tr>
 <tr>
   <td align="center">4</td>
   <td align="left">Carotenemia</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">5</td>
   <td align="left">Spiral Order Matrix II</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N<sup>2</sup>)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">6</td>
   <td align="left">Set Matrix Zeros</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N<sup>2</sup>)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">7</td>
   <td align="left">Next Permutation</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">8</td>
   <td align="left">Reading Newspaper</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">9</td>
   <td align="left">Sum of all Submatrices</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N<sup>2</sup>)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">10</td>
   <td align="left">Merge Intervals</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">11</td>
   <td align="left">Flip</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(N)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">12</td>
   <td align="left">Special Subsequences "AG"</td>
-  <td align="center"></td>
-  <td align="center"></td>
+ <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">13</td>
   <td align="left">First Missing Integer</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">14</td>
   <td align="left">Merge Overlapping Intervals</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N<sup>2</sup>)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">15</td>
   <td align="left">Minimum swaps required to bring all elements less than or equal to k together</td>
-  <td align="center"></td>
-  <td align="center"></td>
+ <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">16</td>
   <td align="left">Minimum number of jumps to reach end</td>
-  <td align="center"></td>
-  <td align="center"></td>
+ <td align="center">O(N<sup>2</sup>)</td>
+  <td align="center">O(N)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">17</td>
   <td align="left">Add One To Number</td>
-  <td align="center"></td>
-  <td align="center"></td>
+ <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
  <tr>
   <td align="center">18</td>
   <td align="left">Rotate Matrix</td>
-  <td align="center"></td>
-  <td align="center"></td>
+ <td align="center">O(N<sup>2</sup>)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
  </tr>
 </table>
