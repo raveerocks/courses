@@ -29,14 +29,11 @@ public class Solution {
         
     }
     
-    
     public void reverse(int[] A, int from, int to){
         while(from<to){
             int temp= A[from];
-            A[from] = A[to];
-            A[to]=temp;
-            from++;
-            to--;
+            A[from++] = A[to];
+            A[to--]=temp;
         }
     }
 }
