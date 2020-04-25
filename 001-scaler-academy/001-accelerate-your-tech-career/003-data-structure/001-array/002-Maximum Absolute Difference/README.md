@@ -1,4 +1,4 @@
-# Maximum Consecutive Gap
+# Maximum Absolute Difference
 
 ## Problem Description
 You are given an array of N integers, A<sub>1</sub>, A<sub>2</sub> ,..., A<sub>N</sub>.
