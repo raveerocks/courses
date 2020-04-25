@@ -38,10 +38,8 @@ public class Solution {
             result = new int[n-startSum];
         }
 
-        for(int j=startSum;j<n;j++){
-            // Copying the sum into the result array
-            result[startResult+j-startSum]=A[j];
-        }
+        System.arraycopy(A,startSum,result,startResult,n-startSum);
+        
         return result;
     }
 }
