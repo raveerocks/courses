@@ -24,8 +24,8 @@ An element is stored in a given index and they can be retrieved at a later time 
 <tr>
   <td align="center">2</td>
   <td align="left">Maximum Absolute Difference</td>
-  <td align="center"></td>
-  <td align="center"></td>
+  <td align="center">O(N)</td>
+  <td align="center">O(1)</td>
   <td align="center"></td>
 </tr>
 <tr>
