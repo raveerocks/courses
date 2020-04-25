@@ -4,14 +4,8 @@ public class Solution {
     
     public int[] nextPermutation(int[] A) {
         
-        int n = A.length;
-        int last = A[n-1];
-        int i = n-2;
-        
-        // looping through increments
-        
-        while(i>=0 && A[i]>=last ){
-            last = A[i];
+        int n = A.length, i = n-2;
+        while(i>=0 && A[i]>=A[i+1] ){
             --i;
         }
         
@@ -21,10 +15,7 @@ public class Solution {
         }
         
   
-        int replacement = A[i];
-        
-        int j=n-1;
-        
+        int replacement = A[i],j=n-1;
         while(A[j]<replacement ){
             j--;
         }
