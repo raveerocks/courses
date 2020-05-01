@@ -4,13 +4,9 @@ public class Solution {
     private int modulus = 1000000007;
 
     public int solve(int A, int B) {
-
-        long c = (long)modulus* modulus;
-
         int fibA = fibonacci(A+1);
         int fibB = fibonacci(B+2);
         return  (fibB-fibA+modulus)%modulus;
-
     }
 
 
