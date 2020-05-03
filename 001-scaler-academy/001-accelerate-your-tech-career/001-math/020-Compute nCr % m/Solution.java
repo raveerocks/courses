@@ -6,7 +6,7 @@ public class Solution {
          // nCr = nCn-r, so we can use min(r,n-r) for optimization
          r = Math.min(r,n-r);
 
-        // combinations[n+1][r+1] is used to store intermediate ncr values 
+        // combinations[n+1][r+1] is used to store intermediate nCr values 
          int[] [] combinations = new int[n+1][r+1];
 
          for (int i=0; i<=n; i++){
