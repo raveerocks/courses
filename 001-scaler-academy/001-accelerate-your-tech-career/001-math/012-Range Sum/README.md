@@ -1,4 +1,4 @@
-#Range Sum
+# Range Sum
 
 ## Problem Description
 Given two integers **A** and **B** such that **A** <= **B**. A Function **F** is defined as follows:
