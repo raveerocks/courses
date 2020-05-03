@@ -32,7 +32,7 @@ Output :
 
 ## Example Explanation
 ```
-  The value of 5C2 % 11 is 10.
+ The value of 5C2 % 11 is 10.
 ```
 ## Example 2
 ```
