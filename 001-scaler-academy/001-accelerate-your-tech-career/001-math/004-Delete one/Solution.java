@@ -27,20 +27,12 @@ public class Solution {
             suffixGCD [i] = gcd(suffixGCD[i+1],A[i]);
         }
         
-        
-        // Calculating excludedGCD from prefixGCD and suffixGCD
-        int excludedGCD[] = new int[n];
-        excludedGCD[0] = suffixGCD[1];
-        excludedGCD[n-1] = prefixGCD[n-2];
-        for(int i=1; i< n-1; i++){
-            excludedGCD[i] = gcd(prefixGCD [i-1],suffixGCD[i+1]);
-        }
-        
        
-       // Calculating maxGCD
-       int maxGCD = excludedGCD[0];
-        for(int i =1; i<n; i++){
-            maxGCD = maxGCD<excludedGCD[i]?excludedGCD[i]:maxGCD;
+       // Calculating excludedGCD and maxGCD from prefixGCD and suffixGCD
+       int maxGCD = Math.max(suffixGCD[1],prefixGCD[n-2]);
+        for(int i =1; i<n-1; i++){
+            int excludedGCD = gcd(prefixGCD [i-1],suffixGCD[i+1]);
+            maxGCD = Math.max(maxGCD,excludedGCD);
         }
         
         return maxGCD;
