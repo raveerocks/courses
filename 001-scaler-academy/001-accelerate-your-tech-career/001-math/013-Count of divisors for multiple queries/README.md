@@ -1,4 +1,4 @@
-#
+# Count of divisors for multiple queries
 
 ## Problem Description
 Given an array of integers **A**, find and return the count of divisors of each element of the array. 
