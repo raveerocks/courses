@@ -19,12 +19,8 @@ public class Solution {
      * @param b : Second Number
      * @return  : GCD
      */
-    private int gcd(int a, int b) {
-        if (b == 0) {
-            return a;
-        } else {
-            return gcd(b, a % b);
-        }
+    public int gcd(int A, int B) {
+        return B==0? A:gcd(B,A%B);
     }
 
     /**
@@ -33,7 +29,7 @@ public class Solution {
      * @param b : Second Number
      * @return  : LCM
      */
-    private int lcm(int a, int b) {
-        return (a / gcd(a, b)) * b;
+    private int lcm(int A, int B){
+        return (A/gcd(A,B))*B;
     }
 }
