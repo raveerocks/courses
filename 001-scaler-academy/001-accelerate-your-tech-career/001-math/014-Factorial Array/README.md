@@ -1,4 +1,4 @@
-#
+# Factorial Array
 
 ## Problem Description
 Groot has an array A of size N. Boring right? Groot thought so too, so he decided to construct another array B of the same size and defined elements of B as: B[i] = factorial of A[i] for every i such that 1<= i <= N.    
