@@ -1,6 +1,6 @@
 package io.github.raveerocks;
 
-class PrimeModulus {
+public class PrimeModulus {
 
     private final long modulus;
     private final long factorials[];
