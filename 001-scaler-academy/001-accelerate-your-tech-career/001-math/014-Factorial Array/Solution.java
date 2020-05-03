@@ -30,7 +30,7 @@ public class Solution {
         return max;
     }
     private int[]  nearestPrime(int max){
-        boolean[] isPrime = isPrime(max+1);
+        boolean[] isPrime = isPrime(max);
         int[] nearestPrime = new int[max+1];
         
         int lastPrime=1;
