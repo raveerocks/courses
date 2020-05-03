@@ -9,13 +9,6 @@ public class Solution {
      * @return  : GCD
      */
     public int gcd(int A, int B) {
-        
-        if(B==0){
-            return A;
-        }
-        else
-        {
-            return gcd(B,A%B);
-        }
+        return B==0? A:gcd(B,A%B);
     }
 }

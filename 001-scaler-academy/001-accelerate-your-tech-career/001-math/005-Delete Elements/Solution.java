@@ -3,26 +3,16 @@ package io.github.raveerocks;
 public class Solution {
     public int solve(int[] A) {
         
-       
-        int currentGCD=A[0];
+        int gcd=A[0];
         
-        for(int i=1; i<A.length;i++){
-            currentGCD = gcd(currentGCD,A[i]);
+        for(int i=1; i<A.length && gcd!=1;i++){
+            gcd = gcd(gcd,A[i]);
         }
         
-        if(currentGCD==1){
-            return 0;
-        }
-        
-        return -1;
+        return gcd==1?0:-1;
     }
     
-    private int gcd(int a, int b){
-        if(b==0){
-            return a;
-        }
-        else{
-            return gcd(b,a%b);
-        }
+    private int gcd(int A, int B) {
+        return B==0? A:gcd(B,A%B);
     }
 }
