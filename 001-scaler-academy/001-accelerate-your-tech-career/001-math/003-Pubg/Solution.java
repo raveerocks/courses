@@ -21,14 +21,7 @@ public class Solution {
      * @param b : Second Number
      * @return  : GCD
      */
-    public int gcd(int a, int b) {
-
-        if(b==0){
-            return a;
-        }
-        else
-        {
-            return gcd(b,a%b);
-        }
+    public int gcd(int A, int B) {
+        return B==0? A:gcd(B,A%B);
     }
 }
