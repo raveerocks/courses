@@ -1,4 +1,4 @@
-# Number Of Open Doors
+# Number of Open Doors
 
 ## Problem Description
 Given an integer A which denotes the number of doors in a row numbered 1 to A. All the doors are closed initially. 
